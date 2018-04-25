@@ -1,0 +1,79 @@
+body {
+
+			font-family: sans-serif;
+		}
+
+		.input-container {
+			max-width: 400px;
+			margin: 20px;
+			overflow: hidden;
+		}
+
+		input[type=text], 
+		textarea,
+		input[type=email],
+		input[type=password],
+		select {
+
+			padding: 5px;
+			display: block;
+			float: left;
+			border: 1px solid gray;
+			width: 70%;
+			box-sizing: border-box;
+			transition: all 0.3s ease-out;
+		}
+
+
+		label.input-label {
+			float: left;
+			width: 30%;
+			box-sizing: border-box;
+		}
+
+		.feedback {
+
+			float: left;
+			width: 100%;
+			padding: 10px;
+			margin-top: 10px;
+			display: none;
+		}
+
+		/*Success Styles*/
+
+		.has-success .label-text {
+			color:green;
+		}
+
+		.has-success input[type=text],
+		.has-success input[type=email],
+		.has-success input[type=password],
+		.has-success textarea {
+			border: 1px solid green;
+		} 
+
+		.has-success .feedback {
+			color:green;
+			background: #D9FFC7;
+		}
+
+
+		/*Error Styles*/
+
+		.has-error .label-text {
+			color:red;
+		}
+
+		.has-error input[type=text],
+		.has-error input[type=email],
+		.has-error input[type=password],
+		.has-error textarea {
+			border: 1px solid red;
+		} 
+
+		.has-error .feedback {
+			color:red;
+			background: pink;
+		}
+

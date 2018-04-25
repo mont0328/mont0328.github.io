@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crowley's Pythons</title>
+
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+</head>
+
+<body>
+	<div id="all">
+	</div>
+		<!-- start of header -->
+		<!-- class "L" applies to both the header and the sidebar -->
+		<header id="site-header" class="elim">
+			<div class="ham"></div>
+			<a href="index.html">
+				<img src="images/cplogo.png" id="logo" alt="Crowley's Pythons logo" title="Crowley's Pythons" width="180">
+			</a>
+			<a href="tel:613-890-0594">
+				<img src="images/phone.png" id="phone-icon" alt="phone icon">
+			</a>
+			<h1 class="elim" id="h1">
+				<a href="index.html" title="Home"> Crowley's Pythons </a>
+			</h1>
+
+			<nav id="headnav" class="elim">
+				<ul id="list1">
+					<li class="hn">
+						<a href="animation.html" class="a1">About Us</a>
+					</li>
+					<li class="hn">
+						<a href="contact.html" class="a1">Contact</a>
+					</li>
+					<li class="hn">
+						<a href="thirdpage.html" class="a1">Pythons</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- mobile navigation -->
+
+			<!-- Tablet Info -->
+			<p class="tablet">Phone:</p>
+			<span class="tablet">613-890-0594</span>
+			<p class="tablet">Address:</p>
+			<div class="tablet">
+				<span>555 Rose St.</span>
+				<span>Rella,</span>
+				<span>OT</span>
+			</div>
+			<!-- Tablet info end -->
+			<div class="mobile-nav-container clearfix">
+			<nav class="mobile-nav-container mobile-nav">
+				<ul class="mobile-nav">
+					<li class="menu-item">
+						<a href="index.html" class="a">Home</a>
+					</li>
+					<li class="menu-item">
+						<a href="index.html" class="a">About Us</a>
+					</li>
+					<li class="menu-item">
+						<a href="contact.html" class="a">Contact</a>
+					</li>
+					<li class="menu-item">
+						<a href="thirdpage.html" class="a">Pythons</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+
+
+			<!-- Search Link-->
+			<a href="#search" id="search-a">
+ 				 <i class="fa fa-search"></i>
+				<img src="images/search.png" alt="search link" width="100" title="Search">
+			</a>
+
+			<!-- Search Form -->
+			<div id="search"> 
+					<span class="close">X</span>
+						<form role="search" id="searchform" action="/search" method="get">
+					<input value="" name="q" type="search" placeholder="type to search"/>
+				</form>
+			</div>
+			<!-- Search requires java and css to be functional -->
+		</header>
+		<!-- end of header -->
+
+		<!-- start of sidebar -->
+		<aside id="sidebar"  class="sidebar">
+			<nav class="side-nav">
+				<ul class="menu">
+					<li class="menu-item">
+						<a href="index.html" class="a">Home</a>
+					</li>
+					<li class="menu-item">
+						<a href="animation.html" class="a">About Us</a>
+					</li>
+					<li class="menu-item">
+						<a href="contact.html" class="a">Contact</a>
+					</li>
+					<li class="menu-item">
+						<a href="thirdpage.html" class="a">Pythons</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<!-- End of sidebar section -->
+
+		<!-- main body -->
+		<h1 id="meet-s">Meet some of our new snakes!</h1>
+		<p id="slider-hello">Here are just a few of the exciting new additions to our lineup! Please feel free to ask us about any of them. They will be available starting next month!</p>
+
+
+		<!-- Slideshow -->
+		<div class="container">
+
+		  <div class="mySlides">
+		    <div class="numbertext">1 / 6</div>
+		      <img src="images/redsnake.jpg" style="width:100%" alt="red snake">
+		  </div>
+
+		  <div class="mySlides">
+		    <div class="numbertext">2 / 6</div>
+		      <img src="images/sandy.jpg" style="width:100%" alt="sandy snake slither">
+		  </div>
+
+		  <div class="mySlides">
+		    <div class="numbertext">3 / 6</div>
+		      <img src="images/snaketongue.jpg" style="width:100%" alt="Snake sticking out its tongue">
+		  </div>
+
+		  <div class="mySlides">
+		    <div class="numbertext">4 / 6</div>
+		      <img src="images/headgrass.jpg" style="width:100%" alt="snake head in the grass">
+		  </div>
+
+		  <div class="mySlides">
+		    <div class="numbertext">5 / 6</div>
+		      <img src="images/sandy.jpg" style="width:100%" alt="sandy snake slither">
+		  </div>
+
+		  <div class="mySlides">
+		    <div class="numbertext">6 / 6</div>
+		      <img src="images/redsnake.jpg" style="width:100%" alt="red snake">
+		  </div>
+
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		  <!-- Image text -->
+		  <div class="caption-container">
+		    <p id="caption"></p>
+		  </div>
+
+		  <!-- Thumbnail images -->
+		  <div class="row">
+		    <div class="column">
+		      <img class="demo cursor" src="images/redsnake.jpg" style="width:100%" onclick="currentSlide(1)" alt="Shining Star Red Velvet">
+		    </div>
+		    <div class="column"> 
+		      <img class="demo cursor" src="images/sandy.jpg" style="width:100%" onclick="currentSlide(2)" alt="Shining Star Sand">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="images/snaketongue.jpg" style="width:100%" onclick="currentSlide(3)" alt="Shining Star Swimmer">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="images/headgrass.jpg" style="width:100%" onclick="currentSlide(4)" alt="Shining Star Gold">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="images/sandy.jpg" style="width:100%" onclick="currentSlide(5)" alt="Shining Star Sand">
+		    </div> 
+		    <div class="column">
+		      <img class="demo cursor" src="images/redsnake.jpg" style="width:100%" onclick="currentSlide(6)" alt="Shining Star Red Velvet">
+		    </div>
+		  </div>
+		</div>
+
+		<!-- start of footer -->
+		<footer id="footer">
+			<!-- Phone Number -->
+			<span class="phone">Phone: 613-890-0594</span>
+			<!-- Address -->
+			<div class="address">
+				<span>Address: 555 Rose St.</span>
+				<span>Rella</span>
+				<span>Ontario</span>
+				<span>Canada</span>
+				<span>K8G 2F5</span>
+			</div>
+			<!-- Email address -->
+			<span class="email"> 
+				<a href="mailto:CrowleyPythons@gmail.com">Email: CrowleyPythons@gmail.com</a>
+			</span>
+			
+			<!-- social media -->
+			<span class="social-media">
+				<a href="https://www.instagram.com" target="_blank">
+					<img src="images/instagram.png" id="insta" alt="instagram">
+				</a>
+				
+				<a href="https://youtube.com" target="_blank">
+					<img src="images/youtube.png" id="youtube" alt="youtube">
+				</a>
+				
+				<a href="https://twitter.com" target="_blank">
+					<img src="images/twitter.png" id="twitter" alt="twitter">
+				</a>
+				
+				<a href="https://facebook.com" target="_blank">
+					<img src="images/facebook.png" id="facebook" alt="facebook">
+				</a>
+			</span>
+			<p id="copyright">Copyright &copy; 2018 Emilie Mont</p>
+		</footer>
+		<!-- end footer -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/slider.js"></script>
+</body>
+</html>
